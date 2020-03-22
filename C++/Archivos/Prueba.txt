@@ -1,0 +1,3 @@
+1|Hola Mundo!|20.00|true
+2|Adios Mundo!|50.00|false
+3|Hola Mundo!|75.00|true

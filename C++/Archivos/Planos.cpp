@@ -8,28 +8,29 @@ Evidentemente, muchas de estas funciones puede que nunca nos sean de utilidad, p
 
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
+int escribirEnArchivo(string texto)
+{
+    ofstream out_file;  // Output File Stream para escribir (writing)
+    ifstream in_file;   // Input File Stream  para leer (reading)
+
+    // Escribir el archivo
+    out_file.open("Prueba.txt", ios::app); // ios::app es lo paralello a "a" que significa append agregar al final del archivo
+    out_file << texto << endl; // agregamos al buffer del stream
+    out_file.close();  // flush el buffer y cerramos. flush el buffer basicamente hace write en el archivo.
+
+    // Leer el archivo
+    in_file.open("Prueba.txt");
+    cout << "[Prueba.txt]  >>>" << endl;
+    cout << in_file.rdbuf(); //endl funciona como activador de flush()
+    // in_file.close() es llamado automaticamente en el destructor de in_file
+    return 1;
+}
+
 int main() {
-   char cadena[128];
-   // Crea un fichero de salida
-   ofstream fs("nombre.txt"); 
-
-   // Enviamos una cadena al fichero de salida:
-   fs << "Hola, mundo" << endl;
-   // Cerrar el fichero, 
-   // para luego poder abrirlo para lectura:
-   fs.close();
-
-   // Abre un fichero de entrada
-   ifstream fe("nombre.txt"); 
-
-   // Leeremos mediante getline, si lo hiciéramos 
-   // mediante el operador << sólo leeríamos 
-   // parte de la cadena:
-   fe.getline(cadena, 128);
-
-   cout << cadena << endl;
-
-   return 0;
+    escribirEnArchivo("1|Hola Mundo!|20.00|true");
+    escribirEnArchivo("2|Adios Mundo!|50.00|false");
+    escribirEnArchivo("3|Hola Mundo!|75.00|true");
 }
