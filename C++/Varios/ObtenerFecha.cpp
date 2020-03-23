@@ -2,10 +2,12 @@
 #include <iostream>
 
 int main() {
-    std::time_t t = std::time(0);   // get time now
-    std::tm* now = std::localtime(&t);
-    std::cout << (now->tm_year + 1900) << '-' 
-         << (now->tm_mon + 1) << '-'
-         <<  now->tm_mday
-         << "\n";
+       time_t current_time;
+    struct tm * time_info;
+    char timeString[9];
+
+    time(&current_time);
+    time_info = localtime(&current_time);
+
+    strftime(timeString, sizeof(timeString), "%H:%M:%S", time_info);
 }
