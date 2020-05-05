@@ -21,17 +21,41 @@ void printarray(int n, int *array) {
 	printf("]\n");
 }
 
-int main(){
+int sumaPares(int *array, int n) {
+	int i = 0;
+	int suma = 0;
+	for (; i < n; i++){
+		if (array[i]%2 ==0){
+			suma += array[i];
+		}
+	}
+	return suma;
+}
 
-    int *array;
-    int tamanoInicial;
-    printf("Introduce el tamaño del arreglo: ");
-    scanf("%d", tamanoInicial);
-    array = (int *)malloc (tamanoInicial*sizeof(int));
 
-    iniarray(tamanoInicial,array);
-    printarray(tamanoInicial,array);
-    free(array);
-    return 0;
+	int main()
+	{
+
+		
+
+		int *array;
+		int tamanoInicial;
+		printf("Introduce el tamaño del arreglo: ");
+		scanf("%d", tamanoInicial);
+		array = (int *)malloc(tamanoInicial * sizeof(int));
+		
+		//Inicializar el array
+		iniarray(tamanoInicial, array);
+		
+		//Imprimir el array
+		printf("Introduce el tamaño del arreglo: ");
+		printarray(tamanoInicial, array);
+
+		
+		printf("\nLa suma del arreglo es: %i" ,sumaPares(array, tamanoInicial) );
+
+		//Liberar la memoria
+		free(array);
+		return 0;
 
 }
