@@ -28,8 +28,14 @@ Coleccion de archivos de diversos lenguajes para ejecutar tareas basicas.
 <h2><u> Contenido Pascal</u></h2>
 
 - [Archivos](./Pascal/Archivos/) -  Manejo de archivos planos, combinacion y edicion de los mismos.
-- [Cadenas](./Pascal/Cadenas/) -  Manejo de cadenas, encryptacion, ordenamiento.
+- [Cadenas](./Pascal/Cadenas/) - Manejo de cadenas, encryptacion, ordenamiento.
 
+
+<h2><u> Contenido Python</u></h2>
+
+- [Archivos](./Python/Listas/) -  Manejo basico de listas, arboles y matrices.
+
+  
 ---
 <h2><u> Contenido Racket</u></h2>
 
