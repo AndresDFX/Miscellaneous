@@ -2,7 +2,7 @@
 
 <h1><u> Miscellaneous</u></h1>
 
-Coleccion de archivos de diversos lenguajes para ejecutar tareas basicas.
+Colección de archivos de diversos lenguajes para ejecutar tareas basicas.
 
 ---
 <h2><u> Contenido C</u></h2>

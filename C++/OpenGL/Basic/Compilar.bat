@@ -1,6 +1,6 @@
 @echo off
 ::Borrar archivos de alguna compilacion anterior
-DEL /F /Q window.o window.exe
+::DEL /F /Q window.o window.exe
 
 ::Compilar el archivo.o y crear .exe
 for %%i in (*.cpp) do (
@@ -11,8 +11,5 @@ for %%i in (*.cpp) do (
 	echo Ejecutable creado correctamente
 	)
 
-::Ejecutar el programa
-echo Ejecutando el programa
-window.exe
 exit
 

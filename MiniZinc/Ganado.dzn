@@ -1,0 +1,34 @@
+/*
+Se requiere mezclar dos tipos de alimentos X y Y para alimentar
+ganado. Cada porcion requiere de por lo menos 60 gramos de
+proteina y por lo menos 30 gramos de grasa. Un paquete de X
+cuesta $80 y contiene 15 gramos de de proteina y 10 gramos de
+grasa; Un paquete de Y cuesta $50 y contiene 20 gramos de
+proteina y 5 gramos de grasa.
+
+Cuanto de cada tipo X y Y se debe usar para minimizar el costo
+de la produccion de alimento?
+
+*/
+
+%Declaracion de constantes
+ 
+%Declaracion de variables
+var float: x;
+var float: y;
+var float: f;
+
+%Declaracion de restricciones
+constraint 15*x + 20*y >= 60;  % Proteina
+constraint 10*x + 5*y  >= 30;  % Grasa
+constraint x >=0;
+constraint y >=0;
+
+%Funcion objetivo
+constraint f = 80*x + 50*y;
+
+%Resolver Funcion objetivo
+solve minimize f;
+output [ "X=" , show (x) , "\nY=" , show (y) , "\nF=" ,show (f) ] ;
+
+

@@ -1,0 +1,11 @@
+;Definicion de la lista de archivos del directorio
+;(define lista (map path->string (directory-list)))
+
+;Definicion de procedimiento que filtra los archivos .rkt
+;(define procedimiento
+;  (lambda (L)
+;    (cond [(empty? L) empty]
+;          [(equal? (cadr(split-string (car L))) "rkt") (cons (car L) (procedimiento (cdr L)) )]
+;          [else (procedimiento (cdr L))])))
+
+;(define lista1 (procedimiento lista))
