@@ -25,6 +25,11 @@ void directLine(GLfloat x_1, GLfloat y_1, GLfloat x_2, GLfloat y_2)
     }
 }
 
+
+//METODO DE LINEA DE PUNTO MEDIO
+
+
+
 //Template de funcion "principal que crea la escena"
 void display(void)
 {
