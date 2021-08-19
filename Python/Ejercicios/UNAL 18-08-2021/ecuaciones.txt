@@ -1,0 +1,4 @@
+trigonometrica,sin(x)+2,trigonometrica,X,Y
+polar,sin(x)+2,polar,X,Y
+en tres dimensiones,sin(x)+2,3D,X,Y
+trigonometrica,sin(2*x)+cos(x)+5,Nueva ecuacion,Eje X,Eje y
