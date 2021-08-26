@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tester.FXMLResultadoController">
+   <children>
+      <Label fx:id="label2" layoutX="36.0" layoutY="210.0" prefHeight="23.0" prefWidth="407.0" text="¿Cuál fue el diagnóstico que más se presentó?" />
+      <Label fx:id="label3" layoutX="36.0" layoutY="387.0" prefHeight="23.0" prefWidth="407.0" text="¿Cuántos pacientes no pudieron ser diagnosticados?" />
+      <Label fx:id="label1" layoutX="36.0" layoutY="31.0" prefHeight="23.0" prefWidth="438.0" text="Diagnóstico de cada paciente, indicando número de cédula espacio diagnostico" />
+      <ScrollPane fx:id="scroll1" layoutX="36.0" layoutY="65.0" prefHeight="123.0" prefWidth="646.0">
+         <content>
+            <TextArea fx:id="text1" prefHeight="109.0" prefWidth="647.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scroll2" layoutX="36.0" layoutY="244.0" prefHeight="123.0" prefWidth="646.0">
+         <content>
+            <TextArea fx:id="text2" prefHeight="109.0" prefWidth="647.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scroll3" layoutX="36.0" layoutY="421.0" prefHeight="98.0" prefWidth="646.0">
+         <content>
+            <TextArea fx:id="text3" prefHeight="83.0" prefWidth="647.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

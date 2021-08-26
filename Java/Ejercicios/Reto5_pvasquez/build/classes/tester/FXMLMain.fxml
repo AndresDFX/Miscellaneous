@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="186.0" prefWidth="454.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="tester.FXMLMainController">
+   <children>
+      <Button fx:id="agregarPaciente" layoutX="36.0" layoutY="47.0" mnemonicParsing="false" onAction="#ventanaPaciente" text="Agregar Paciente" />
+      <Button fx:id="btnAgregarMedico" layoutX="312.0" layoutY="47.0" mnemonicParsing="false" onAction="#ventanaMedico" text="Agregar Medico" />
+      <Button fx:id="btnDiagnosticar" layoutX="177.0" layoutY="118.0" mnemonicParsing="false" onAction="#ventanaDiagnosticar" text="DIAGNOSTICAR" />
+   </children>
+</AnchorPane>

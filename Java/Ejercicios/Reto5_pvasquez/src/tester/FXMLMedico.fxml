@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="296.0" prefWidth="320" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tester.FXMLMedicoController">
+<children>
+        <Label fx:id="label" layoutX="74.0" layoutY="25.0" minHeight="16" minWidth="69" prefHeight="44.0" prefWidth="149.0" text=" MEDICOS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+      <Button fx:id="btnAgregarM" layoutX="98.0" layoutY="243.0" mnemonicParsing="false" onAction="#AgregarMedico" text="Agregar Medico" />
+      <Label fx:id="labelNmedico" layoutX="82.0" layoutY="92.0" prefHeight="17.0" prefWidth="100.0" text="Nombre" />
+      <Label fx:id="labelCMedico" layoutX="82.0" layoutY="182.0" prefHeight="17.0" prefWidth="100.0" text="Cedula" />
+      <TextField fx:id="txNMedico" layoutX="74.0" layoutY="118.0" />
+      <TextField fx:id="txCMedico" layoutX="74.0" layoutY="199.0" />
+      <Button fx:id="btnMenu" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnMenu" prefHeight="17.0" prefWidth="41.0" text="&lt;" />
+    </children>
+</AnchorPane>
