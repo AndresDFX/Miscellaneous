@@ -1,0 +1,86 @@
+.home{    
+    @media #{map-get($display-breakpoints, 'md-and-up')} {
+        background-image: url(~@/assets/img/home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    @media #{map-get($display-breakpoints, 'sm-and-down')} {
+        padding-top: 0px;
+    }
+    .info-general{
+        margin-top: 100px;
+        .informacion{
+            padding-left: 60px;
+            .titulo{
+                color: #0F4275;
+            }
+            .divider{
+                height: 3pt;
+                background-color: #0F4275;
+                max-width: 570px;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
+            .texto{
+                color: #0F4275;
+                //letter-spacing: 0.3em;
+                font-family: Roboto;
+                font-size: 20px;
+                margin-bottom: 90px;
+                padding-right: 10px;
+            }
+        }       
+        @media #{map-get($display-breakpoints, 'md-and-down')} {
+            .informacion {
+                padding-right: 0px;
+                .divider{
+                    max-width: 380px;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+                .texto{
+                    margin-bottom: 30px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        @media #{map-get($display-breakpoints, 'sm-and-down')} {
+            .informacion {
+                padding-right: 50px;
+                padding-left: 50px;
+                
+            }
+        }
+        @media #{map-get($display-breakpoints, 'lg-and-down')} {
+            .menu {
+                padding-left: 50px;
+                padding-right: 80px;
+            }
+        }
+        .menu{
+            padding-left: 150px;
+            .menu-btn{
+                //color: #0F4275 !important;
+                font-size: 18px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'md-and-down')} {
+            .menu {
+                padding-left: 10px;
+                padding-right: 30px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'sm-and-down')} {
+            .menu {
+                background-color: rgb(77,152,225);
+            }
+        }
+    }
+    @media #{map-get($display-breakpoints, 'sm-and-down')} {
+        .info-general{
+            margin-top: 0px;
+        }
+    }
+}

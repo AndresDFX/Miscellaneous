@@ -1,0 +1,113 @@
+.page{
+    .header{
+        margin-top: 20px;
+        .informacion{
+            padding-left: 60px;
+            .titulo{
+                color: #0F4275;
+                letter-spacing: 0.09em !important;
+            }
+            .divider{
+                height: 3pt;
+                background-color: #0F4275;
+                max-width: 530px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+            .texto{
+                color: #0F4275;
+                font-family: Roboto;
+                font-size: 20px;
+                margin-bottom: 90px;
+                padding-right: 10px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'md-and-down')} {
+            .informacion {
+                padding-right: 0px;
+                padding-left: 30px;
+                .divider{
+                    max-width: 380px;
+                    margin-top: 10px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .menu{
+            padding-left: 150px;
+            margin-top: 20px;
+            padding-right: 20px;
+            .menu-btn{
+                color: #0F4275 !important;
+                font-size: 18px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'lg-and-down')} {
+            .menu {
+                padding-left: 50px;
+                padding-right: 100px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'md-and-down')} {
+            .menu {
+                padding-left: 10px;
+                padding-right: 30px;
+            }
+        }
+        @media #{map-get($display-breakpoints, 'sm-and-down')} {
+            .menu {
+                margin-top: 0px;
+                padding-right: 10px;
+            }
+        }
+        .search-header{
+            padding-left: 60px;
+        }
+        @media #{map-get($display-breakpoints, 'md-and-down')} {
+            .search-header{
+                padding-left: 30px;
+            }
+        }
+    }
+    .page-search{
+        padding-left: 60px;
+        padding-right: 60px;
+        .text-search{
+            color: #616161;
+        } 
+        .portada{
+            cursor: pointer;
+        }
+    }
+    .page-details{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 100px;
+        .contenido{
+            .info-titulo{
+                color:#0F4275;
+            }
+            .info-descripcion{
+                color:#484848;
+            }
+            .divider{
+                height: 3pt;
+                background-color: #0F4275;
+                max-width: 150px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .page-curiosidades{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 100px;
+        .contenido{
+            .info-descripcion{
+                text-decoration: none;
+                color:#0F4275;
+            }
+        }
+    }
+}
