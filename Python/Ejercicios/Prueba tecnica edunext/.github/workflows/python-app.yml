@@ -1,0 +1,39 @@
+name: QA 01_our_microservice
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        cd 01_our_microservice
+        pip install -r requirements/test.txt
+    - name: Lint with pylint
+      run: |
+        cd 01_our_microservice
+        pylint customerdataapi/
+    - name: Ciclomatic complexity
+      run: |
+        cd 01_our_microservice
+        radon cc customerdataapi/
+        xenon -b B -m A -a A customerdataapi/
+    - name: Unit tests
+      run: |
+        cd 01_our_microservice
+        coverage run -m pytest
+        coverage report -m --fail-under=100

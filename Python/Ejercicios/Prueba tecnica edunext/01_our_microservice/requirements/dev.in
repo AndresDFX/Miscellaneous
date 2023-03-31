@@ -1,0 +1,4 @@
+# Additional requirements for development of this application
+
+pip-tools                 # Requirements file management
+tox                       # virtualenv management for tests

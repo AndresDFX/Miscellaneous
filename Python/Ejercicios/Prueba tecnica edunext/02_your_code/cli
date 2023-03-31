@@ -1,0 +1,14 @@
+if [ "setup" == $1 ]; then
+    echo "Running setup"
+    pip install -r requirements.txt
+    cd ..
+    cd 01_our_microservice
+    python setup.py install
+
+else
+    echo "Upgrading with args: ${@:2}"
+    python manage.py modify_customer_data --action=$1 --customer_data_id=$2 --plan=$3
+fi
+
+echo "Your first argument must be either 'setup', 'upgrade' or 'downgrade'"
+

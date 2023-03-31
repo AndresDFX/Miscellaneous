@@ -1,0 +1,23 @@
+[
+  {
+    "model": "customerdataapi.customerdata",
+    "pk": "1b2f7b83-7b4d-441d-a210-afaa970e5b76",
+    "fields": {
+      "data": "{\"banner_message\":\"<p><span>Welcome</span> to Mr X's website</p>\",\"LAST_PAYMENT_DATE\":\"2020-01-10T09:25:00Z\",\"theme_name\":\"Tropical Island\",\"user_profile_image\":\"https://i.imgur.com/LMhM8nn.jpg\",\"ENABLED_FEATURES\":{\"CERTIFICATES_INSTRUCTOR_GENERATION\":true,\"ENABLE_COURSEWARE_SEARCH\":true,\"ENABLE_EDXNOTES\":true,\"ENABLE_DASHBOARD_SEARCH\":true,\"INSTRUCTOR_BACKGROUND_TASKS\":true,\"ENABLE_COURSE_DISCOVERY\":true},\"displayed_timezone\":\"America/Bogota\",\"language_code\":\"en\",\"CREATION_DATE\":\"2013-03-10T02:00:00Z\",\"user_email\":\"barack@aol.com\",\"SUBSCRIPTION\":\"basic\"}"
+    }
+  },
+  {
+    "model": "customerdataapi.customerdata",
+    "pk": "49a6307e-c261-414d-86f5-c6004bcec8ab",
+    "fields": {
+      "data": "{\"banner_message\":\"<h1>Chilling in the snow</h1>\",\"LAST_PAYMENT_DATE\":null,\"theme_name\":\"Candy Crush\",\"user_profile_image\":\"https://i.imgur.com/YXOQCIp.png\",\"ENABLED_FEATURES\":{\"CERTIFICATES_INSTRUCTOR_GENERATION\":false,\"ENABLE_COURSEWARE_SEARCH\":false,\"ENABLE_EDXNOTES\":true,\"ENABLE_DASHBOARD_SEARCH\":false,\"INSTRUCTOR_BACKGROUND_TASKS\":false,\"ENABLE_COURSE_DISCOVERY\":false},\"displayed_timezone\":\"Europe/Zurich\",\"language_code\":\"de\",\"CREATION_DATE\":\"2020-06-19T02:18:00Z\",\"user_email\":\"lisaschneider@gmail.com\",\"SUBSCRIPTION\":\"free\"}"
+    }
+  },
+  {
+    "model": "customerdataapi.customerdata",
+    "pk": "a237ed14-88fb-45f3-b9b1-471877dbdc60",
+    "fields": {
+      "data": "{\"banner_message\":\"<p>Everything is awesome</p>\",\"LAST_PAYMENT_DATE\":\"2020-08-10T19:25:00Z\",\"theme_name\":\"Mustache Bash\",\"user_profile_image\":\"https://i.imgur.com/5ATSCxo.jpg\",\"ENABLED_FEATURES\":{\"CERTIFICATES_INSTRUCTOR_GENERATION\":true,\"ENABLE_COURSEWARE_SEARCH\":true,\"ENABLE_EDXNOTES\":true,\"ENABLE_DASHBOARD_SEARCH\":true,\"INSTRUCTOR_BACKGROUND_TASKS\":false,\"ENABLE_COURSE_DISCOVERY\":false},\"displayed_timezone\":\"America/NewYork\",\"language_code\":\"en\",\"CREATION_DATE\":\"2016-06-10T02:18:00Z\",\"user_email\":\"thegood@gmail.com\",\"SUBSCRIPTION\":\"premium\"}"
+    }
+  }
+]

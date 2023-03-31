@@ -1,0 +1,11 @@
+# Requirements for test runs.
+
+
+pytest-catchlog           # Show log output for test failures
+pytest-cov                # pytest extension for code coverage statistics
+pytest-django             # pytest extension for better Django support
+pylint                    # Basic Quality check
+flake8                    # In case you want to use it
+pycodestyle               # Pep8 checker
+radon                     # Ciclomatic complexity
+xenon                     # Ciclomatic complexity for CI

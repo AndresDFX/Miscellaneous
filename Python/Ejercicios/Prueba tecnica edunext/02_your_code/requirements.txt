@@ -1,0 +1,7 @@
+flake8
+black
+isort
+ipython
+pytest==6.2.5
+pytest-django
+pdbpp
