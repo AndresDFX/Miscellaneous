@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/connection/DatabaseConnection.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/dao/GenericDAO.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/AddRecordFrame.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/MainFrame.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/CRUDFrame.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/ConnectionPanel.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/UpdateRecordFrame.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/service/DatabaseService.java</file>
+            <file>file:/C:/Users/EQUIPO/Documents/NetBeansProjects/DatabaseManager/src/com/project/database/ui/MainPanel.java</file>
+        </group>
+    </open-files>
+</project-private>
